@@ -1,0 +1,20 @@
+.f-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-left{
+    gap: 1rem;
+}
+
+.f-menu{
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 603px) {
+    .f-container {
+        gap: 30px;
+    }
+}

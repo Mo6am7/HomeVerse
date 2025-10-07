@@ -1,0 +1,91 @@
+.r-wapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.r-topbu {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.e-container {
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    transition: all 300ms ease-in;
+}
+
+.r-card:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.r-card:nth-child(3) {
+    font-size: 1.5rem;
+}
+
+.r-card:nth-child(4) {
+    font-size: 0.7rem;
+    width: 15rem;
+}
+
+.r-card:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(225, 225, 225, 0)0%, rgba(225, 225, 225, 0)217.91%);
+    box-shadow: 0 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+
+.Swiper {
+    width: 1400px;
+    flex-shrink: 0;
+    gap: 0;
+}
+
+.r-detail {
+    width: 300px;
+}
+
+.r-card img {
+    width: 100%;
+    max-width: 15rem;
+}
+
+
+.r-Data {
+    display: flex;
+    flex-direction: column;
+}
+
+.r-buttons {
+    gap: 1rem;
+}
+
+.r-buttons button {
+    width: 50px;
+    font-size: 22px;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background-color: #fff;
+}
+
+.r-buttons button:hover {
+    box-shadow: 0 0 20px blue;
+}

@@ -1,0 +1,87 @@
+.h-wapper {
+    background: var(--black);
+    color: #fff;
+    padding: .3rem;
+}
+
+.h-container {
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--secondary);
+}
+
+.h-menu {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.h-menu a {
+    text-shadow: 5px 10px 10px #000;
+}
+
+.Contact {
+    height: 50px;
+    margin: 5px;
+    width: 100px;
+    background: #333;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .h-menu {
+        width: 200px;
+        /* background-color: rgba(36, 40, 50, 1);
+background-image: linear-gradient(135deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 40%, rgba(37, 28, 40, 1) 100%); */
+
+        background-color: rgba(36, 40, 50, 1);
+        background-image: linear-gradient(139deg,
+        rgba(36, 40, 50, 1) 0%,
+        rgba(36, 40, 50, 1) 0%,
+        rgba(37, 28, 40, 1) 100%);
+
+        border-radius: 10px;
+        padding: 29px 0px;
+        display: flex;
+        position: absolute;
+        z-index: 11;
+        translate: -10px 0;
+        top: 4rem;
+        right: 4rem;
+        box-shadow: 0 10px 10px #000;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+        .menu-icon:hover{
+            display: none;
+        }
+}

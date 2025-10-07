@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Environment Settings */
+    "target": "ES2022", // React 19 يستفيد من features أحدث
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["react", "react-dom"],
+
+    /* JSX Settings */
+    "jsx": "react-jsx", // الجديد في React 17+ (و React 19 برضه)
+    "allowJs": true,
+
+    /* Module Handling */
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Performance */
+    "skipLibCheck": true,
+    "isolatedModules": true
+  },
+  "include": ["src", "src/declarations.d.ts", "node_modules/swiper/types/swiper.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

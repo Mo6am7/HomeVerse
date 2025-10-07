@@ -1,0 +1,127 @@
+.c-container {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.c-container div {
+    flex: 1;
+}
+
+.c-right {
+    width: 100%;
+}
+
+.c-left {
+    gap: 0.5rem;
+}
+
+.contactModes {
+    margin-top: 2rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contactModes .Row {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.flexStart {
+    width: 100%;
+    color: #234567;
+    display: flex;
+}
+
+.mode {
+    width: 16rem;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300sm all ease-in;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+}
+
+.mode:hover {
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+
+.mode .detail .primaryText {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.gap {
+    flex-shrink: 0;
+    gap: 2rem;
+}
+
+.Coll {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.Coll:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.Coll span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.Coll svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.Coll:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.Coll:hover svg {
+    transform: translateX(0);
+}
+
+.Coll:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1168px) {
+    .c-container {
+        flex-direction: column-reverse;
+    }
+}
